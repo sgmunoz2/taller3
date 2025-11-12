@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Taller 3 </h1>
+    <section>
+        <h2>
+            Calculadora Interactiva
+        </h2>
+        <label for="num1Input">Numero 1: </label>
+        <input type="number" name="num1" id="num1Input" required>
+        <label for="num2Input">Numero 2:</label>
+        <input type="number" name="num2" id="num2Input" required>
+        <hr>
+        <button id="sumarBtn"> Sumar </button>
+        <button id="restarBtn"> Restar </button>
+        <button id="multBtn"> Multiplicar </button>
+        <button id="dividirBtn"> Dividir </button>
+        <hr>
+        <h3>Resultado:</h3>
+        <div id="resultadoDiv">
+            <p id="resultadoTexto"></p>
+        </div>
+
+        <hr>
+
+    </section>
+
+    <section>
+        <h2>Formulario de Registro</h2>
+
+        <form action="" id="registroForm">
+            <label for="nombreInput"> Ingresa tu nombre: </label>
+            <input type="text" name="nombre" id="nombreInput" minlength="3" required>
+            <br>
+            <label for="nombreInput"> Ingresa tu Email: </label>
+            <input type="email" name="email" id="emailInput" required>
+            <br>
+            <label for="nombreInput"> Ingresa tu contraseña: </label>
+            <input type="password" name="password" id="passwordInput" required minlength="6">
+            <br>
+            <label for="nombreInput"> Ingresa tu fecha de nacimiento: </label>
+            <input type="date" name="fecha" id="fechaInput" required>
+            <br>
+            <button type="submit" id="registrarseBtn"> Registrarse</button>
+        </form>
+        <div id="salidaFormulario"><p id="textoSalida"></p></div>
+    </section>
+    <hr>
+    <section>
+        <h2>Cálculo de diferencia de fechas.</h2>
+        <label for="fecha1Input"> Ingresa la fecha 1: </label>
+        <input type="date" name="fecha1" id="fecha1Input">
+        <br>
+        <label for="fecha2Input"> Ingresa la fecha 2: </label>
+        <input type="date" name="fecha2" id="fecha2Input">
+        <br>
+        <button id="calcfecha"> Calcular Diferencia</button>
+        <div id="salidaFecha"><p id="textoSalidaFecha"></p></div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
